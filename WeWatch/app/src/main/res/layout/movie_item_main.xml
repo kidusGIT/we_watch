@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/movie_item"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="7dp"
+    android:layout_marginRight="10dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/custume_ripple"
+        android:backgroundTint="@color/white">
+
+        <ImageView
+            android:id="@+id/movie_cover"
+            android:layout_width="110dp"
+            android:layout_height="125dp"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/image_border"
+            android:scaleType="fitXY"
+            android:src="@drawable/movie_image"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <TextView
+            android:id="@+id/movie_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="12dp"
+            android:autoText="false"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/movie_cover"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Movie Name" />
+
+        <TextView
+            android:id="@+id/movie_descrption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/secondary_font_color"
+            app:layout_constraintStart_toEndOf="@+id/movie_cover"
+            app:layout_constraintTop_toBottomOf="@+id/movie_name"
+            tools:text="Movie Name" />
+
+        <ImageButton
+            android:id="@+id/delete_button"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/main_border"
+            android:backgroundTint="@color/background_color"
+            android:tint="@color/black"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_delete_24" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
