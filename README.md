@@ -1,26 +1,14 @@
-# README
+# WeWatch
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
+* Kotlin on the front-end  
+    + Use Fragment
+    + Room database
+    + Retrofit for fetching data from server
+    + Caching system using room database
+    + Shared preference
++ Ruby on rails on the back-end   
+    + Use JWT for user authentication and authorization 
+    + Rails Api
 * Here are the screen shots   
 
 ![](screen_shotes/screenshot-1710585681244.png) 
